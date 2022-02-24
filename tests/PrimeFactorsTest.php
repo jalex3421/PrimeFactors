@@ -3,7 +3,6 @@
 declare(strict_types=1);
 
 namespace Deg540\PHPTestingBoilerplate\Test;
-//use /var/www/html/src/PrimeFactors;
 use Deg540\PHPTestingBoilerplate\PrimeFactors;
 use PHPUnit\Framework\TestCase;
 
@@ -45,18 +44,15 @@ final class PrimeFactorsTest extends TestCase{
         $this->assertEquals(array(2),$calculatedPrimeFactor);
     }
 
-
-
     /**
-     * @test
+     * @test : determina si un valor es primo o no
      */
-    /*
     public function when_prime_give_true(){
         $primeFactors = new PrimeFactors();
-        $convertedvalue = $primeFactors->convertPrime(4); //act
-        $this->assertEquals("prime",$convertedvalue); //assert
+        $convertedvalue = $primeFactors->convertPrime(11);
+        $this->assertEquals(true,$convertedvalue); //assert
     }
-    */
+
 
 
 }
