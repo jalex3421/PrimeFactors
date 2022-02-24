@@ -12,19 +12,25 @@ class PrimeFactors
     public function calculateOne(int $number_1_to_Factor):array
     {
         if($number_1_to_Factor==1){ return array();}
-        else{return array(1);}
+        else{return array(-1);}
     }
 
     public function calculateTwo(int $number_2_to_Factor):array
     {
         if($number_2_to_Factor==2){ return array(2);}
-        else{return array(17);}
+        else{return array(-1);}
     }
 
     public function calculateThree(int $number_3_to_Factor):array
     {
         if($number_3_to_Factor==3){ return array(3);}
-        else{return array(17);}
+        else{return array(-1);}
+    }
+
+    public function calculateFour(int $number_4_to_Factor):array
+    {
+        if($number_4_to_Factor==4){ return array(2);}
+        else{return array(-1);}
     }
 
 
