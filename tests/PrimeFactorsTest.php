@@ -36,6 +36,15 @@ final class PrimeFactorsTest extends TestCase{
         $this->assertEquals(array(3),$calculatedPrimeFactor);
     }
 
+    /**
+     * @test : determina que 4 tiene un unico factor
+     */
+    public function number_4_has_one_factor(){
+        $primeFactor = new PrimeFactors();
+        $calculatedPrimeFactor = $primeFactor->calculateFour(4);
+        $this->assertEquals(array(2),$calculatedPrimeFactor);
+    }
+
 
 
     /**
