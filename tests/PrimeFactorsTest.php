@@ -19,13 +19,23 @@ final class PrimeFactorsTest extends TestCase{
     }
 
     /**
-     * @test : determina que 1 no tiene factores
+     * @test : determina que 2 tiene un unico factor
      */
-    public function number_2_has_no_factors(){
+    public function number_2_has_one_factor(){
         $primeFactor = new PrimeFactors();
         $calculatedPrimeFactor = $primeFactor->calculateTwo(2);
         $this->assertEquals(array(2),$calculatedPrimeFactor);
     }
+
+    /**
+     * @test : determina que 3 tiene un unico factor
+     */
+    public function number_3_has_one_factor(){
+        $primeFactor = new PrimeFactors();
+        $calculatedPrimeFactor = $primeFactor->calculateThree(3);
+        $this->assertEquals(array(3),$calculatedPrimeFactor);
+    }
+
 
 
     /**
