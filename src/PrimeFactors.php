@@ -9,10 +9,16 @@ class PrimeFactors
         return ();
     } */
 
-    public function calculate(int $number_1_to_Factor):array
+    public function calculateOne(int $number_1_to_Factor):array
     {
         if($number_1_to_Factor==1){ return array();}
         else{return array(1);}
+    }
+
+    public function calculateTwo(int $number_1_to_Factor):array
+    {
+        if($number_1_to_Factor==2){ return array(2);}
+        else{return array(17);}
     }
 
 
