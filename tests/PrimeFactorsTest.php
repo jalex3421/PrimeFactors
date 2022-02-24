@@ -14,11 +14,18 @@ final class PrimeFactorsTest extends TestCase{
      */
     public function number_1_has_no_factors(){
         $primeFactor = new PrimeFactors();
-        $calculatedPrimeFactor = $primeFactor->calculate(1);
+        $calculatedPrimeFactor = $primeFactor->calculateOne(1);
         $this->assertEmpty($calculatedPrimeFactor); //assert
     }
 
-    //lo mismo para dos
+    /**
+     * @test : determina que 1 no tiene factores
+     */
+    public function number_2_has_no_factors(){
+        $primeFactor = new PrimeFactors();
+        $calculatedPrimeFactor = $primeFactor->calculateTwo(2);
+        $this->assertEquals(array(2),$calculatedPrimeFactor);
+    }
 
 
     /**
