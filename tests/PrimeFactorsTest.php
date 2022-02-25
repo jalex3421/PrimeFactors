@@ -53,6 +53,14 @@ final class PrimeFactorsTest extends TestCase{
         $this->assertEquals(true,$convertedvalue); //assert
     }
 
-
+    /**
+     * @test : devuelve lista con factores primos
+     */
+    public function prime_factors(){
+        $primeFactors = new PrimeFactors();
+        $convertedvalue = $primeFactors->convertPrimeFactors(186);
+        print_r($convertedvalue);
+        $this->assertNotEmpty($convertedvalue); //assert
+    }
 
 }
