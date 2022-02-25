@@ -38,4 +38,16 @@ class PrimeFactors
         return true;
     }
 
+    public function convertPrimeFactors(int $number_to_be_converted):array{
+        $primefactors = array();
+        for($i=1; $i<=$number_to_be_converted;$i++){
+            if($number_to_be_converted%$i==0){
+                if($this->convertPrime($i)){
+                    array_push($primefactors,$i);
+                }
+            }
+        }
+        return $primefactors;
+    }
+
 }
